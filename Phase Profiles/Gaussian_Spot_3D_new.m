@@ -3,6 +3,9 @@ close all;
 clear all;
 clc;
 
+
+addpath(genpath('../BasicFunctions/'));
+
 %% System Parameters
 w_beam  = 0.535e-3;    % beam waist of the generated mode
 lambda  = 532e-9;      % illumination wavelength

@@ -1,8 +1,12 @@
 
 close all;
 clear all;
+
+
+addpath(genpath('../BasicFunctions/'));
+
 %---------------------------------------------------------
-    image=imread('image1.bmp');%load the target image
+    image=imread('logo.png');%load the target image
     if size(size(image))==[1,3]
             Target=double(rgb2gray(image));
     elseif size(size(image))==[1,2]     
